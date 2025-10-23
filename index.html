@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FirstHello.Live — Say hello live. Get the offer.</title>
+  <meta name="description" content="FirstHello.Live — AI career co-pilot for senior engineers. Warm intros, targeted outreach, interview training, and offer tracking." />
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0a0a0a; --muted:#666; --accent:#e02424;
+      --border:#eaeaea; --card:#fafafa; --radius:16px; --shadow:0 8px 24px rgba(0,0,0,.06); --maxw:1080px;
+    }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    a{color:var(--text);text-decoration:none}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--border);backdrop-filter:saturate(180%) blur(8px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:800;letter-spacing:.2px}.brand span{color:var(--accent)}
+    .nav a{margin-left:20px;font-size:14px}
+    .cta{display:inline-block;background:var(--text);color:var(--bg);padding:10px 14px;border-radius:999px;font-weight:600;border:1px solid var(--text)}
+    .hero{padding:64px 0 32px}
+    .hero h1{font-size:clamp(28px,5vw,52px);line-height:1.05;margin:0 0 14px;letter-spacing:-.5px}
+    .one-liner{font-size:clamp(16px,2.4vw,20px);color:var(--muted);max-width:800px}
+    .pill{display:inline-block;margin:16px 0 0;padding:8px 12px;border:1px solid var(--border);border-radius:999px;background:#fff}
+    section{padding:48px 0;border-top:1px solid var(--border)}
+    .two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+    @media (max-width:900px){.two-col{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+    h2{font-size:clamp(22px,3.2vw,32px);margin:0 0 14px} p{line-height:1.6} ul{margin:10px 0 0 18px}
+    .hook{color:var(--accent);font-weight:800}
+    .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .badge{border:1px solid var(--border);border-radius:999px;padding:6px 10px;font-size:12px;background:#fff}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    @media (max-width:1000px){.steps{grid-template-columns:repeat(2,1fr)}} @media (max-width:620px){.steps{grid-template-columns:1fr}}
+    .step{background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+    .step .num{width:36px;height:36px;border-radius:999px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;margin-bottom:10px}
+    .highlight{border-left:4px solid var(--accent);padding-left:14px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px;margin-top:10px}
+    .waitlist{background:#fff;border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+    .wl-row{display:flex;gap:10px;flex-wrap:wrap}
+    input[type="email"]{flex:1;min-width:240px;border:1px solid var(--border);border-radius:10px;padding:12px 14px;font-size:16px}
+    button[type="submit"]{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:12px 16px;font-weight:700;cursor:pointer}
+    .note{font-size:12px;color:var(--muted);margin-top:10px}
+    .success,.error{margin-top:10px;font-weight:700}.success{color:#0a7f2e}.error{color:var(--accent)}
+    footer{padding:28px 0;color:var(--muted);font-size:13px}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <div class="brand" aria-label="FirstHello.Live logo">FirstHello<span>.Live</span></div>
+      <nav>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#community">Community</a>
+        <a href="#ai">AI</a>
+        <a class="cta" href="#waitlist">Join Waitlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1><span class="hook">Say hello live.</span> Get the offer.</h1>
+        <p class="one-liner">
+          The AI career co-pilot for senior SWE / DevOps / QA targeting the US, UK & EU.
+          We warm relationships first, then execute outreach, training, and tracking—end to end.
+        </p>
+        <div class="pill mono">No more guesswork. No more cold starts.</div>
+      </div>
+    </section>
+
+    <section id="problem">
+      <div class="container two-col">
+        <div>
+          <h2>The problem we solve — and for whom</h2>
+          <p>
+            Senior SWE / DevOps / QAs struggling to land new roles across the US, UK & EU
+            because it’s not only <b>WHAT</b> you’ve done—but <b>HOW</b> you tell it and <b>TO WHOM</b> you speak.
+          </p>
+          <div class="card">
+            <p>
+              In the <b>UK</b>, <span class="hook">~75%</span> of candidates send <span class="hook">20–50 applications</span> before their first interview.  
+              Median time to first interview: <span class="hook">~56 days</span>.
+            </p>
+          </div>
+          <div class="badges">
+            <span class="badge">Senior ICs (5–15y)</span>
+            <span class="badge">Remote & On-site</span>
+            <span class="badge">US • UK • EU</span>
+          </div>
+        </div>
+        <div>
+          <h2>Why the old playbook fails</h2>
+          <div class="card">
+            <ul>
+              <li><b>ATS filters</b> that miss real impact.</li>
+              <li><b>Weak narrative</b> that undersells outcomes.</li>
+              <li><b>Cold outreach</b> with low reply rates.</li>
+              <li>No <b>end-to-end guidance</b> across the funnel.</li>
+            </ul>
+            <p style="margin-top:10px">
+              Text-only <span class="hook">“AI resume fixes”</span> don’t move outcomes without pre-networking and warm-up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution">
+      <div class="container">
+        <h2>Our solution in 4 steps</h2>
+        <div class="steps" role="list">
+          <div class="step" role="listitem">
+            <div class="num" aria-hidden="true">1</div>
+            <h3>High-signal CV artifacts</h3>
+            <p>Turn past work into crisp, outcome-driven bullets and STAR(L) stories that pass human sniff tests.</p>
+          </div>
+          <div class="step" role="listitem">
+            <div class="num" aria-hidden="true">2</div>
+            <h3>Warm-up & targeted outreach</h3>
+            <p>We warm the network and run calibrated outreach to Talent Partners & Hiring Managers—quality over volume.</p>
+          </div>
+          <div class="step" role="listitem">
+            <div class="num" aria-hidden="true">3</div>
+            <h3>Interview training</h3>
+            <p>Behavioral + system design drills with rubrics; guided practice to turn “hello” into an onsite.</p>
+          </div>
+          <div class="step" role="listitem">
+            <div class="num" aria-hidden="true">4</div>
+            <h3>Offer tracking</h3>
+            <p>Track applications, replies, interviews, and offer progress—know what to do next, every day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="community">
+      <div class="container two-col">
+        <div>
+          <h2>Warm community, real intros</h2>
+          <p>
+            You’re not alone. Join a supportive community of senior engineers who exchange intros, review cases,
+            and volunteer <span class="hook">free 1-to-1 mock interviews</span> to help you cross the finish line.
+          </p>
+          <div class="highlight">
+            <b>Peer power:</b> calibrated feedback, structured rubrics, and real hiring signals from people who’ve done it.
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">What you get</h3>
+          <ul>
+            <li>Warm intros & targeted message templates that actually get replies.</li>
+            <li>Peer mock interviews (behavioral + system design) at no cost.</li>
+            <li>Examples & case breakdowns from successful offers.</li>
+            <li>Weekly accountability and momentum.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai">
+      <div class="container two-col">
+        <div>
+          <h2>AI that accelerates outcomes</h2>
+          <p>
+            Your AI consultant helps you plot a <b>career strategy</b>, builds <b>high-signal CV content</b>,
+            runs <b>mock-interview training</b> with rubrics, and tells you <b>who to contact and how</b>—so the first hello leads to the offer.
+          </p>
+          <div class="badges">
+            <span class="badge">Role–Skill Graph</span>
+            <span class="badge">Outcome-calibrated messaging</span>
+            <span class="badge">Interview rubrics</span>
+            <span class="badge">Offer funnel analytics</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">What’s different</h3>
+          <ul>
+            <li><span class="hook">Warm first</span>, then smart outreach (not spray-and-pray).</li>
+            <li>Human-grade narratives, not keyword soup.</li>
+            <li>Full-funnel guidance, not a one-off resume fix.</li>
+            <li>Signals of excellence mapped to your target roles.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section id="waitlist">
+      <div class="container">
+        <h2>Join the waitlist</h2>
+        <div class="waitlist" aria-labelledby="waitlist">
+          <form id="wlForm" novalidate>
+            <label for="email" class="mono" style="display:block;margin-bottom:8px;">Get early access & pilot invites:</label>
+            <div class="wl-row">
+              <input type="email" id="email" name="email" placeholder="you@company.com" aria-label="Email address" required />
+              <button type="submit" aria-label="Join waitlist">Join Waitlist</button>
+            </div>
+            <div class="note">We’ll email you only about FirstHello.Live launches and pilot programs. You can opt out anytime.</div>
+            <div id="wlMsg" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> FirstHello.Live • Built for senior engineers. <br/>
+      <span class="mono">Say hello live. Get the offer.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Waitlist via email (mailto)
+    const form = document.getElementById('wlForm');
+    const msg  = document.getElementById('wlMsg');
+
+    function validateEmail(value){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value); }
+
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      msg.textContent = ''; msg.className = '';
+
+      const email = document.getElementById('email').value.trim();
+      if(!validateEmail(email)){
+        msg.textContent = 'Please enter a valid email address.'; msg.className = 'error'; return;
+      }
+
+      // Save locally as lightweight backup
+      try{
+        const key = 'firsthello_waitlist';
+        const list = JSON.parse(localStorage.getItem(key) || '[]');
+        if(!list.includes(email)){ list.push(email); localStorage.setItem(key, JSON.stringify(list)); }
+      }catch(_){}
+
+      const to = 'waitlist@firsthello.live';
+      const subject = 'Waitlist signup — FirstHello.Live';
+      const bodyLines = [
+        `Email: ${email}`,
+        `Source: firsthello.live`,
+        `Timestamp: ${new Date().toISOString()}`,
+        `User-Agent: ${navigator.userAgent}`
+      ];
+      const mailtoHref = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+
+      // Try opening default mail client with prefilled email
+      // 1) programmatic click
+      const link = document.createElement('a');
+      link.href = mailtoHref;
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // 2) fallback
+      setTimeout(()=>{ try{ window.location.href = mailtoHref; }catch(_){} }, 100);
+
+      // UX message with direct link fallback
+      msg.innerHTML = `We opened your email app to send your request to <b>${to}</b>.<br/>
+        If nothing opened, <a href="${mailtoHref}">click here</a> or email <a href="mailto:${to}">${to}</a> manually.`;
+      msg.className = 'success';
+
+      form.reset();
+    });
+  </script>
+</body>
+</html>
